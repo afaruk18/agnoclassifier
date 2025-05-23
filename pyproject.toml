@@ -1,0 +1,10 @@
+[project]
+name = "agno-classifier"
+version = "0.1.0"
+description = "agno classifier"
+readme = "README.md"
+authors = [
+    { name = "Faruk Cetınkaya", email = "ahmetfarukcetinkaya290@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = []
