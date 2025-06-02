@@ -39,10 +39,10 @@ Required Dependencies
 
 bash
 
-uv add agno
-uv add langchain-community
-uv add pydantic
-uv add python-dotenv
+    uv add agno
+    uv add langchain-community
+    uv add pydantic
+    uv add python-dotenv
 
 
 Usage
@@ -50,24 +50,24 @@ Basic Usage
 
 python
 
-from agno_classifier.legal_classifier import LegalDocumentClassifier
-from dotenv import load_dotenv
+    from agno_classifier.legal_classifier import LegalDocumentClassifier
+    from dotenv import load_dotenv
 
-# Load environment variables
-load_dotenv()
+    # Load environment variables
+    load_dotenv()
 
-# Create classifier instance
-classifier = LegalDocumentClassifier(
-    model_id="gpt-4.1-nano",
-    user_id="your_user_id",
-    db_file="tmp/memory.db",
-    debug_mode=True
-)
+    # Create classifier instance
+    classifier = LegalDocumentClassifier(
+        model_id="gpt-4.1-nano",
+        user_id="your_user_id",
+        db_file="tmp/memory.db",
+        debug_mode=True
+    )
 
-# Classify a PDF document
-pdf_path = "path/to/your/document.pdf"
-result = classifier.get_response_and_scores(pdf_file_path)
-print("Classification Result:", result)
+    # Classify a PDF document
+    pdf_path = "path/to/your/document.pdf"
+    result = classifier.get_response_and_scores(pdf_file_path)
+    print("Classification Result:", result)
 
 
 
