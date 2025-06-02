@@ -1,11 +1,17 @@
 An AI-powered system for automatically classifying Turkish legal documents into predefined contract categories using OpenAI's GPT models and the Agno framework.
-Features
+
+
 
     Automated Classification: Classifies Turkish legal documents into 20 predefined contract types
+    
     PDF Support: Extracts text from PDF files and processes them for classification
+    
     Memory & Storage: Optional memory and storage capabilities for maintaining conversation history
+    
     Confidence Scoring: Provides relevance scores for all contract categories with detailed rationales
+    
     Key Term Extraction: Identifies important legal terms that support the classification decision
+    
     Configurable: Customizable model selection, memory settings, and classification parameters
 
 Supported Contract Types
