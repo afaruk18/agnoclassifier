@@ -76,14 +76,3 @@ python
     print("Classification Result:", result)
 
 
-
-# Custom configuration
-classifier = LegalDocumentClassifier(
-    model_id="gpt-4o",  # Different model
-    user_id="custom_user",
-    db_file="custom/path/memory.db",
-    max_chars_for_prompt=8000,  # Larger prompt size
-    enable_memory=True,
-    enable_storage=True,
-    debug_mode=False
-)
